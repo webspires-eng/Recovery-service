@@ -82,6 +82,7 @@ function HomeContent() {
   const locationName = locations[location]?.name ? locations[location]?.name : "West Midlands";
   console.log(Object.keys(locations).length);
   const kwd = params.get("kwd");
+  const eKeyword = kwd ? kwd : "Emergency Towing Service";
   const keyword = kwd ? kwd : "Car Recovery Service";
   const city = location ? locations[location]?.name : "UK";
 
@@ -93,7 +94,7 @@ function HomeContent() {
         <div className="max-w-[1180px] mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
             <div className="pr-5 mx-w-[600px]">
-              <h1 className="text-[32px] md:text-[42px] font-bold leading-tight mb-2">
+              <h1 className=" text-[32px] capitalize md:text-[42px] font-bold leading-tight mb-2">
                 <span className="text-[24px] md:text-[32px] text-orange font-normal">24 Hours</span><br />
                 {keyword} In
                 <span className="text-orange"> {locationName}</span> & Outskirts
@@ -114,13 +115,13 @@ function HomeContent() {
             </div>
 
             <div className="mt-8 lg:mt-0 relative w-full h-[350px] sm:h-[450px] lg:h-full">
-              <Image 
-                className="block object-cover rounded-lg" 
-                sizes="(max-width: 1024px) 100vw, 50vw" 
-                fill 
-                priority 
-                src="https://uploads.webspires.co.uk/recovery961lp/Towing-Service-1-1.jpg" 
-                alt={keyword} 
+              <Image
+                className="block object-cover rounded-lg"
+                sizes="(max-width: 1024px) 100vw, 50vw"
+                fill
+                priority
+                src="https://uploads.webspires.co.uk/recovery961lp/Towing-Service-1-1.jpg"
+                alt={keyword}
               />
             </div>
 
@@ -160,17 +161,17 @@ function HomeContent() {
 
       {/*  RECOVERD SECTION */}
       <section className="py-20 mt-20 bg-[#333333] relative overflow-hidden">
-        <Image 
-          src="https://uploads.webspires.co.uk/recovery961lp/images.jpeg" 
-          alt="Background" 
-          fill 
+        <Image
+          src="https://uploads.webspires.co.uk/recovery961lp/images.jpeg"
+          alt="Background"
+          fill
           sizes="100vw"
           quality={75}
-          className="object-cover object-center mix-blend-multiply opacity-90" 
+          className="object-cover object-center mix-blend-multiply opacity-90"
         />
         <div className="max-w-[1180px] mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center">
-            <h2 className="text-[36px] md:text-[60px] text-orange leading-tight font-bold">Emergency Towing Service<br className="max-md:hidden" />
+            <h2 className="text-[36px] capitalize md:text-[60px] text-orange leading-tight font-bold">{eKeyword}<br className="max-md:hidden" />
               <span className="md:hidden"> </span>in <span className="text-white">{locationName}</span> & <span className="text-white">Outskirts</span>
             </h2>
           </div>
@@ -193,21 +194,21 @@ function HomeContent() {
           <div className="mt-10 md:mt-20 grid grid-cols-1 md:grid-cols-2 gap-x-10 lg:gap-x-20 gap-y-8 text-[16px] md:text-[20px] font-light">
             <div className="flex items-start gap-4">
               <ArrowIcon className="shrink-0 mt-1 fill-[#38A132] size-6" />
-              <p><strong className="font-semibold">24 HOUR EMERGENCY CAR RECOVERY:</strong><br /> Available 24/7, our Emergency {keyword} ensures swift assistance for breakdowns and mishaps, anytime, anywhere in {locationName} & Outskirts.</p>
+              <p><strong className="font-semibold capitalize">24 HOUR {kwd ? kwd : "EMERGENCY CAR RECOVERY"}:</strong><br /> Available 24/7, our {kwd ? kwd : "Emergency Car Recovery"} ensures swift assistance for breakdowns and mishaps, anytime, anywhere in {locationName} & Outskirts.</p>
             </div>
             <div className="flex items-start gap-4">
               <ArrowIcon className="shrink-0 mt-1 fill-[#38A132] size-6" />
-              <p><strong className="font-semibold">Roadside Assistance:</strong><br />
+              <p><strong className="font-semibold capitalize">Roadside Assistance:</strong><br />
                 Get back on the road swiftly with our reliable roadside assistance. Available around the clock for all your vehicle needs in {locationName} & Outskirts. Call Now!</p>
             </div>
             <div className="flex items-start gap-4">
               <ArrowIcon className="shrink-0 mt-1 fill-[#38A132] size-6" />
-              <p><strong className="font-semibold">Vehicle Transportation:</strong> Seamless vehicle transportation tailored to your needs. Trust us for safe and efficient transport services in {locationName} & Outskirts.
+              <p><strong className="font-semibold capitalize">Vehicle Transportation:</strong> Seamless vehicle transportation tailored to your needs. Trust us for safe and efficient transport services in {locationName} & Outskirts.
               </p>
             </div>
             <div className="flex items-start gap-4">
               <ArrowIcon className="shrink-0 mt-1 fill-[#38A132] size-6" />
-              <p><strong className="font-semibold">Jump Start:</strong> Quick and efficient jump-start services to revive your vehicle's battery, available whenever you need it.
+              <p><strong className="font-semibold capitalize">Jump Start:</strong> Quick and efficient jump-start services to revive your vehicle's battery, available whenever you need it.
               </p>
             </div>
           </div>
