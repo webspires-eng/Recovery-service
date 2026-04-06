@@ -1,4 +1,5 @@
 "use client"
+import React, { Suspense } from "react";
 import Image from "next/image";
 import ArrowIcon from "@/components/ArrowIcon";
 import Button from "@/components/Button";
@@ -73,7 +74,7 @@ const recoverData = [
   },
 ]
 
-export default function Home() {
+function HomeContent() {
 
   const params = useSearchParams();
 
@@ -317,5 +318,13 @@ export default function Home() {
 
 
     </>
+  );
+}
+
+export default function Home() {
+  return (
+    <Suspense fallback={<div className="min-h-screen bg-white"></div>}>
+      <HomeContent />
+    </Suspense>
   );
 }
