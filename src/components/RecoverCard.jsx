@@ -5,7 +5,7 @@ const RecoverCard = ({ data }) => {
         <>
             <div className="px-4 py-3 text-center">
                 <div className="size-32.5 mb-4 mx-auto">
-                    <img src={data.image} alt="" className='size-full object-contain' />
+                    <img loading="lazy" width="130" height="130" src={data.image} alt="" className='size-full object-contain' />
                 </div>
                 <h4 className='text-[22px] uppercase mb-5 text-orange leading-none font-bold'>{data.title}</h4>
                 <p className='text-[18px] leading-tight'>{data.description}</p>

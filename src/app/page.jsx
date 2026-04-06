@@ -1,13 +1,16 @@
+"use client"
+import Image from "next/image";
 import ArrowIcon from "@/components/ArrowIcon";
 import Button from "@/components/Button";
 import RecoverCard from "@/components/RecoverCard";
 import TestimonialCarousel from "@/components/TestimonialCarousel";
-
+import { locations } from "@/utils/location";
+import { useSearchParams } from "next/navigation";
 
 const testimonialData = [
   {
     id: 1,
-    name: "lounlill",
+    name: "Lauren Hill",
     date: "2 months ago",
     stars: 5,
     text: "Thank you brilliant service.cant fult them.thay turned up on time very friendly and cheap 100%.recommend them.abz recovery"
@@ -21,14 +24,14 @@ const testimonialData = [
   },
   {
     id: 3,
-    name: "Walid H",
+    name: "William Hughes",
     date: "2 months ago",
     stars: 5,
     text: "excillent job , very professional."
   },
   {
     id: 4,
-    name: "Noor Saeed",
+    name: "Nathan Scott",
     date: "2 months ago",
     stars: 5,
     text: "Excellent service from start to finish. The team replaced the radiators on my cars and carried out a full service, all completed to a very high standard. Th..."
@@ -71,6 +74,17 @@ const recoverData = [
 ]
 
 export default function Home() {
+
+  const params = useSearchParams();
+
+  const location = params.get("loc");
+  const locationName = locations[location]?.name ? locations[location]?.name : "West Midlands";
+  console.log(Object.keys(locations).length);
+  const kwd = params.get("kwd");
+  const keyword = kwd ? kwd : "Car Recovery Service";
+  const city = location ? locations[location]?.name : "UK";
+
+
   return (
     <>
 
@@ -80,8 +94,8 @@ export default function Home() {
             <div className="pr-5 mx-w-[600px]">
               <h1 className="text-[32px] md:text-[42px] font-bold leading-tight mb-2">
                 <span className="text-[24px] md:text-[32px] text-orange font-normal">24 Hours</span><br />
-                Car Recovery Service In
-                <span className="text-orange"> West Midlands</span> & Outskirts
+                {keyword} In
+                <span className="text-orange"> {locationName}</span> & Outskirts
               </h1>
               <h4 className="text-[20px] md:text-[26px] font-bold text-blue">Arrive in less than 15 mins</h4>
 
@@ -90,7 +104,7 @@ export default function Home() {
                 <li className="relative"><svg className="absolute -left-8  top-1 fill-[#38A132] size-6" viewBox="0 0 512 512" data-id="icon-arrow-circle-right-solid" data-name=""><path d="M256 8c137 0 248 111 248 248S393 504 256 504 8 393 8 256 119 8 256 8zm-28.9 143.6l75.5 72.4H120c-13.3 0-24 10.7-24 24v16c0 13.3 10.7 24 24 24h182.6l-75.5 72.4c-9.7 9.3-9.9 24.8-.4 34.3l11 10.9c9.4 9.4 24.6 9.4 33.9 0L404.3 273c9.4-9.4 9.4-24.6 0-33.9L271.6 106.3c-9.4-9.4-24.6-9.4-33.9 0l-11 10.9c-9.5 9.6-9.3 25.1.4 34.4z"></path></svg>  Transparent <strong>Pricing</strong></li>
                 <li className="relative"><svg className="absolute -left-8  top-1 fill-[#38A132] size-6" viewBox="0 0 512 512" data-id="icon-arrow-circle-right-solid" data-name=""><path d="M256 8c137 0 248 111 248 248S393 504 256 504 8 393 8 256 119 8 256 8zm-28.9 143.6l75.5 72.4H120c-13.3 0-24 10.7-24 24v16c0 13.3 10.7 24 24 24h182.6l-75.5 72.4c-9.7 9.3-9.9 24.8-.4 34.3l11 10.9c9.4 9.4 24.6 9.4 33.9 0L404.3 273c9.4-9.4 9.4-24.6 0-33.9L271.6 106.3c-9.4-9.4-24.6-9.4-33.9 0l-11 10.9c-9.5 9.6-9.3 25.1.4 34.4z"></path></svg>  Latest Tow <strong>Trucks </strong></li>
                 <li className="relative"><svg className="absolute -left-8  top-1 fill-[#38A132] size-6" viewBox="0 0 512 512" data-id="icon-arrow-circle-right-solid" data-name=""><path d="M256 8c137 0 248 111 248 248S393 504 256 504 8 393 8 256 119 8 256 8zm-28.9 143.6l75.5 72.4H120c-13.3 0-24 10.7-24 24v16c0 13.3 10.7 24 24 24h182.6l-75.5 72.4c-9.7 9.3-9.9 24.8-.4 34.3l11 10.9c9.4 9.4 24.6 9.4 33.9 0L404.3 273c9.4-9.4 9.4-24.6 0-33.9L271.6 106.3c-9.4-9.4-24.6-9.4-33.9 0l-11 10.9c-9.5 9.6-9.3 25.1.4 34.4z"></path></svg> <strong>Trusted & Reliable</strong> Service</li>
-                <li className="relative"><svg className="absolute -left-8  top-1 fill-[#38A132] size-6" viewBox="0 0 512 512" data-id="icon-arrow-circle-right-solid" data-name=""><path d="M256 8c137 0 248 111 248 248S393 504 256 504 8 393 8 256 119 8 256 8zm-28.9 143.6l75.5 72.4H120c-13.3 0-24 10.7-24 24v16c0 13.3 10.7 24 24 24h182.6l-75.5 72.4c-9.7 9.3-9.9 24.8-.4 34.3l11 10.9c9.4 9.4 24.6 9.4 33.9 0L404.3 273c9.4-9.4 9.4-24.6 0-33.9L271.6 106.3c-9.4-9.4-24.6-9.4-33.9 0l-11 10.9c-9.5 9.6-9.3 25.1.4 34.4z"></path></svg> <strong>24/7</strong> Car Recovery Service</li>
+                <li className="relative"><svg className="absolute -left-8  top-1 fill-[#38A132] size-6" viewBox="0 0 512 512" data-id="icon-arrow-circle-right-solid" data-name=""><path d="M256 8c137 0 248 111 248 248S393 504 256 504 8 393 8 256 119 8 256 8zm-28.9 143.6l75.5 72.4H120c-13.3 0-24 10.7-24 24v16c0 13.3 10.7 24 24 24h182.6l-75.5 72.4c-9.7 9.3-9.9 24.8-.4 34.3l11 10.9c9.4 9.4 24.6 9.4 33.9 0L404.3 273c9.4-9.4 9.4-24.6 0-33.9L271.6 106.3c-9.4-9.4-24.6-9.4-33.9 0l-11 10.9c-9.5 9.6-9.3 25.1.4 34.4z"></path></svg> <strong>24/7</strong> {keyword}</li>
                 <li className="relative"><svg className="absolute -left-8  top-1 fill-[#38A132] size-6" viewBox="0 0 512 512" data-id="icon-arrow-circle-right-solid" data-name=""><path d="M256 8c137 0 248 111 248 248S393 504 256 504 8 393 8 256 119 8 256 8zm-28.9 143.6l75.5 72.4H120c-13.3 0-24 10.7-24 24v16c0 13.3 10.7 24 24 24h182.6l-75.5 72.4c-9.7 9.3-9.9 24.8-.4 34.3l11 10.9c9.4 9.4 24.6 9.4 33.9 0L404.3 273c9.4-9.4 9.4-24.6 0-33.9L271.6 106.3c-9.4-9.4-24.6-9.4-33.9 0l-11 10.9c-9.5 9.6-9.3 25.1.4 34.4z"></path></svg> <strong>Damage-Free</strong> Car Recovery</li>
               </ul>
               <div className="max-w-82.5">
@@ -98,8 +112,15 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="mt-8 lg:mt-0">
-              <img className="block w-full h-full object-cover rounded-lg overflow-hidden " src="https://abzrecoveryservices.co.uk/wp-content/uploads/2024/06/Towing-Service-1-1.jpg" alt="Car Recovery Service" />
+            <div className="mt-8 lg:mt-0 relative w-full h-[350px] sm:h-[450px] lg:h-full">
+              <Image 
+                className="block object-cover rounded-lg" 
+                sizes="(max-width: 1024px) 100vw, 50vw" 
+                fill 
+                priority 
+                src="https://uploads.webspires.co.uk/recovery961lp/Towing-Service-1-1.jpg" 
+                alt={keyword} 
+              />
             </div>
 
           </div>
@@ -137,11 +158,19 @@ export default function Home() {
       </section>
 
       {/*  RECOVERD SECTION */}
-      <section className="py-20 mt-20 bg-[#333333]">
-        <div className="max-w- mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="py-20 mt-20 bg-[#333333] relative overflow-hidden">
+        <Image 
+          src="https://uploads.webspires.co.uk/recovery961lp/images.jpeg" 
+          alt="Background" 
+          fill 
+          sizes="100vw"
+          quality={75}
+          className="object-cover object-center mix-blend-multiply opacity-90" 
+        />
+        <div className="max-w-[1180px] mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center">
             <h2 className="text-[36px] md:text-[60px] text-orange leading-tight font-bold">Emergency Towing Service<br className="max-md:hidden" />
-              <span className="md:hidden"> </span>in <span className="text-white">West Midlands</span> & <span className="text-white">Outskirts</span>
+              <span className="md:hidden"> </span>in <span className="text-white">{locationName}</span> & <span className="text-white">Outskirts</span>
             </h2>
           </div>
 
@@ -163,16 +192,16 @@ export default function Home() {
           <div className="mt-10 md:mt-20 grid grid-cols-1 md:grid-cols-2 gap-x-10 lg:gap-x-20 gap-y-8 text-[16px] md:text-[20px] font-light">
             <div className="flex items-start gap-4">
               <ArrowIcon className="shrink-0 mt-1 fill-[#38A132] size-6" />
-              <p><strong className="font-semibold">24 HOUR EMERGENCY CAR RECOVERY:</strong><br /> Available 24/7, our Emergency Car Recovery service ensures swift assistance for breakdowns and mishaps, anytime, anywhere in West Midlands & Outskirts.</p>
+              <p><strong className="font-semibold">24 HOUR EMERGENCY CAR RECOVERY:</strong><br /> Available 24/7, our Emergency {keyword} ensures swift assistance for breakdowns and mishaps, anytime, anywhere in {locationName} & Outskirts.</p>
             </div>
             <div className="flex items-start gap-4">
               <ArrowIcon className="shrink-0 mt-1 fill-[#38A132] size-6" />
               <p><strong className="font-semibold">Roadside Assistance:</strong><br />
-                Get back on the road swiftly with our reliable roadside assistance. Available around the clock for all your vehicle needs in West Midlands & Outskirts. Call Now!</p>
+                Get back on the road swiftly with our reliable roadside assistance. Available around the clock for all your vehicle needs in {locationName} & Outskirts. Call Now!</p>
             </div>
             <div className="flex items-start gap-4">
               <ArrowIcon className="shrink-0 mt-1 fill-[#38A132] size-6" />
-              <p><strong className="font-semibold">Vehicle Transportation:</strong> Seamless vehicle transportation tailored to your needs. Trust us for safe and efficient transport services in West Midlands & Outskirts.
+              <p><strong className="font-semibold">Vehicle Transportation:</strong> Seamless vehicle transportation tailored to your needs. Trust us for safe and efficient transport services in {locationName} & Outskirts.
               </p>
             </div>
             <div className="flex items-start gap-4">
@@ -188,7 +217,7 @@ export default function Home() {
       <section className="py-10 mt-20">
         <div className="max-w-[1180px] mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <h4 className="text-blue text-[24px] md:text-[36px] font-bold">Trusted by <span className="text-orange">1000s</span> Across The UK</h4>
+            <h4 className="text-blue text-[24px] md:text-[36px] font-bold">Trusted by <span className="text-orange">1000s</span> Across The {city}</h4>
             <h2 className="text-[36px] md:text-[60px] text-orange leading-tight font-extrabold">OUR CUSTOMERS LOVE US</h2>
             <div className="max-w-[150px] h-2.5 bg-[#FFD245] mx-auto"></div>
           </div>
@@ -198,14 +227,14 @@ export default function Home() {
             <div className="flex justify-center gap-0.5">
               {
                 [...Array(5)].map((_, i) => (
-                  <img key={i} src="http://cdn.trustindex.io/assets/platform/Google/star/f.svg" alt="Star"
+                  <Image key={i} width={28} height={28} src="https://cdn.trustindex.io/assets/platform/Google/star/f.svg" alt="Star"
                     className="inline-block size-7" />
                 ))
               }
             </div>
-            <p className="text-[15px]">Based on <strong>695 reviews</strong></p>
-            <div className="flex justify-center">
-              <img className="h-8" src="https://cdn.trustindex.io/assets/platform/Google/logo.svg" alt="" />
+            <p className="text-[15px]">Based on <strong>1695  reviews</strong></p>
+            <div className="flex justify-center mb-2">
+              <Image style={{ width: 'auto' }} className="h-8" width={90} height={32} src="https://cdn.trustindex.io/assets/platform/Google/logo.svg" alt="Google Logo" />
             </div>
           </div>
 
@@ -232,7 +261,7 @@ export default function Home() {
                 </svg>
               </div>
               <div className="w-[85%] z-10 aspect-square mx-auto rounded-[24px] overflow-hidden drop-shadow-xl relative bg-[#EAEAEA]">
-                <img className="size-full object-cover" src="https://abzrecoveryservices.co.uk/wp-content/uploads/2024/06/pexels-artem-makarov-13151224-scaled-1.jpg" alt="" />
+                <Image className="object-cover" sizes="(max-width: 1024px) 85vw, 40vw" fill src="https://uploads.webspires.co.uk/recovery961lp/pexels-artem-makarov-13151224-scaled-1.jpg" alt="Why Choose Us" />
               </div>
             </div>
 
@@ -281,7 +310,7 @@ export default function Home() {
       <footer className="py-8 mt-20 bg-[#252727] text-white">
         <div className="max-w-[1180px] mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <h5 className="text-md text-white/80 font-light">Copyright © 2024 ABZ Recovery Service. All rights reserved.</h5>
+            <h5 className="text-md text-white/80 font-light">Copyright © {new Date().getFullYear()} Group 961 Ltd. All rights reserved.</h5>
           </div>
         </div>
       </footer>
