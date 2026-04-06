@@ -79,7 +79,7 @@ function HomeContent() {
   const params = useSearchParams();
 
   const location = params.get("loc");
-  const locationName = locations[location]?.name ? locations[location]?.name : "West Midlands";
+  const locationName = locations[location]?.name ? locations[location]?.name : "Newcastle";
   console.log(Object.keys(locations).length);
   const kwd = params.get("kwd");
   const eKeyword = kwd ? kwd : "Emergency Towing Service";
@@ -111,21 +111,21 @@ function HomeContent() {
       <section className="py-8 md:py-16">
         <div className="max-w-[1180px] mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
-            <div className="pr-5 mx-w-[600px]">
-              <h1 className=" text-[32px] capitalize md:text-[42px] font-bold leading-tight mb-2">
-                <span className="text-[24px] md:text-[32px] text-orange font-normal">24 Hours</span><br />
+            <div className="lg:pr-5 mx-w-[600px]">
+              <h1 className=" text-[32px] capitalize md:text-[42px] font-[800] leading-tight mb-2">
+                <span className="text-[24px] md:text-[32px] text-orange font-[500]">24 Hours</span><br />
                 {keyword} In
                 <span className="text-orange"> {locationName}</span> & Outskirts
               </h1>
-              <h4 className="text-[20px] md:text-[26px] font-bold text-blue">Arrive in less than 15 mins</h4>
+              <h4 className="text-[20px] md:text-[26px] font-[700] text-blue">Arrive in less than 15 mins</h4>
 
-              <ul className="border-t border-cyan-900/20 mt-3 mb-6 pl-8 pt-3 opacity-90 space-y-2 md:space-y-1 text-[16px] md:text-[20px]" >
-                <li className="relative"><svg className="absolute -left-8  top-1 fill-[#38A132] size-6" viewBox="0 0 512 512" data-id="icon-arrow-circle-right-solid" data-name=""><path d="M256 8c137 0 248 111 248 248S393 504 256 504 8 393 8 256 119 8 256 8zm-28.9 143.6l75.5 72.4H120c-13.3 0-24 10.7-24 24v16c0 13.3 10.7 24 24 24h182.6l-75.5 72.4c-9.7 9.3-9.9 24.8-.4 34.3l11 10.9c9.4 9.4 24.6 9.4 33.9 0L404.3 273c9.4-9.4 9.4-24.6 0-33.9L271.6 106.3c-9.4-9.4-24.6-9.4-33.9 0l-11 10.9c-9.5 9.6-9.3 25.1.4 34.4z"></path></svg>  <strong>Rapid</strong> Response Time</li>
-                <li className="relative"><svg className="absolute -left-8  top-1 fill-[#38A132] size-6" viewBox="0 0 512 512" data-id="icon-arrow-circle-right-solid" data-name=""><path d="M256 8c137 0 248 111 248 248S393 504 256 504 8 393 8 256 119 8 256 8zm-28.9 143.6l75.5 72.4H120c-13.3 0-24 10.7-24 24v16c0 13.3 10.7 24 24 24h182.6l-75.5 72.4c-9.7 9.3-9.9 24.8-.4 34.3l11 10.9c9.4 9.4 24.6 9.4 33.9 0L404.3 273c9.4-9.4 9.4-24.6 0-33.9L271.6 106.3c-9.4-9.4-24.6-9.4-33.9 0l-11 10.9c-9.5 9.6-9.3 25.1.4 34.4z"></path></svg>  Transparent <strong>Pricing</strong></li>
-                <li className="relative"><svg className="absolute -left-8  top-1 fill-[#38A132] size-6" viewBox="0 0 512 512" data-id="icon-arrow-circle-right-solid" data-name=""><path d="M256 8c137 0 248 111 248 248S393 504 256 504 8 393 8 256 119 8 256 8zm-28.9 143.6l75.5 72.4H120c-13.3 0-24 10.7-24 24v16c0 13.3 10.7 24 24 24h182.6l-75.5 72.4c-9.7 9.3-9.9 24.8-.4 34.3l11 10.9c9.4 9.4 24.6 9.4 33.9 0L404.3 273c9.4-9.4 9.4-24.6 0-33.9L271.6 106.3c-9.4-9.4-24.6-9.4-33.9 0l-11 10.9c-9.5 9.6-9.3 25.1.4 34.4z"></path></svg>  Latest Tow <strong>Trucks </strong></li>
-                <li className="relative"><svg className="absolute -left-8  top-1 fill-[#38A132] size-6" viewBox="0 0 512 512" data-id="icon-arrow-circle-right-solid" data-name=""><path d="M256 8c137 0 248 111 248 248S393 504 256 504 8 393 8 256 119 8 256 8zm-28.9 143.6l75.5 72.4H120c-13.3 0-24 10.7-24 24v16c0 13.3 10.7 24 24 24h182.6l-75.5 72.4c-9.7 9.3-9.9 24.8-.4 34.3l11 10.9c9.4 9.4 24.6 9.4 33.9 0L404.3 273c9.4-9.4 9.4-24.6 0-33.9L271.6 106.3c-9.4-9.4-24.6-9.4-33.9 0l-11 10.9c-9.5 9.6-9.3 25.1.4 34.4z"></path></svg> <strong>Trusted & Reliable</strong> Service</li>
-                <li className="relative"><svg className="absolute -left-8  top-1 fill-[#38A132] size-6" viewBox="0 0 512 512" data-id="icon-arrow-circle-right-solid" data-name=""><path d="M256 8c137 0 248 111 248 248S393 504 256 504 8 393 8 256 119 8 256 8zm-28.9 143.6l75.5 72.4H120c-13.3 0-24 10.7-24 24v16c0 13.3 10.7 24 24 24h182.6l-75.5 72.4c-9.7 9.3-9.9 24.8-.4 34.3l11 10.9c9.4 9.4 24.6 9.4 33.9 0L404.3 273c9.4-9.4 9.4-24.6 0-33.9L271.6 106.3c-9.4-9.4-24.6-9.4-33.9 0l-11 10.9c-9.5 9.6-9.3 25.1.4 34.4z"></path></svg> <strong>24/7</strong> {keyword}</li>
-                <li className="relative"><svg className="absolute -left-8  top-1 fill-[#38A132] size-6" viewBox="0 0 512 512" data-id="icon-arrow-circle-right-solid" data-name=""><path d="M256 8c137 0 248 111 248 248S393 504 256 504 8 393 8 256 119 8 256 8zm-28.9 143.6l75.5 72.4H120c-13.3 0-24 10.7-24 24v16c0 13.3 10.7 24 24 24h182.6l-75.5 72.4c-9.7 9.3-9.9 24.8-.4 34.3l11 10.9c9.4 9.4 24.6 9.4 33.9 0L404.3 273c9.4-9.4 9.4-24.6 0-33.9L271.6 106.3c-9.4-9.4-24.6-9.4-33.9 0l-11 10.9c-9.5 9.6-9.3 25.1.4 34.4z"></path></svg> <strong>Damage-Free</strong> Car Recovery</li>
+              <ul className="border-t border-cyan-900/20 mt-3 mb-6 pl-8 pt-3 opacity-90 font-[300] space-y-2 md:space-y-1 text-[16px] md:text-[20px]" >
+                <li className="relative"><svg className="absolute -left-8  top-1 fill-[#38A132] size-6" viewBox="0 0 512 512" data-id="icon-arrow-circle-right-solid" data-name=""><path d="M256 8c137 0 248 111 248 248S393 504 256 504 8 393 8 256 119 8 256 8zm-28.9 143.6l75.5 72.4H120c-13.3 0-24 10.7-24 24v16c0 13.3 10.7 24 24 24h182.6l-75.5 72.4c-9.7 9.3-9.9 24.8-.4 34.3l11 10.9c9.4 9.4 24.6 9.4 33.9 0L404.3 273c9.4-9.4 9.4-24.6 0-33.9L271.6 106.3c-9.4-9.4-24.6-9.4-33.9 0l-11 10.9c-9.5 9.6-9.3 25.1.4 34.4z"></path></svg>  <strong className="font-500">Rapid</strong> Response Time</li>
+                <li className="relative"><svg className="absolute -left-8  top-1 fill-[#38A132] size-6" viewBox="0 0 512 512" data-id="icon-arrow-circle-right-solid" data-name=""><path d="M256 8c137 0 248 111 248 248S393 504 256 504 8 393 8 256 119 8 256 8zm-28.9 143.6l75.5 72.4H120c-13.3 0-24 10.7-24 24v16c0 13.3 10.7 24 24 24h182.6l-75.5 72.4c-9.7 9.3-9.9 24.8-.4 34.3l11 10.9c9.4 9.4 24.6 9.4 33.9 0L404.3 273c9.4-9.4 9.4-24.6 0-33.9L271.6 106.3c-9.4-9.4-24.6-9.4-33.9 0l-11 10.9c-9.5 9.6-9.3 25.1.4 34.4z"></path></svg>  Transparent <strong className="font-500">Pricing</strong></li>
+                <li className="relative"><svg className="absolute -left-8  top-1 fill-[#38A132] size-6" viewBox="0 0 512 512" data-id="icon-arrow-circle-right-solid" data-name=""><path d="M256 8c137 0 248 111 248 248S393 504 256 504 8 393 8 256 119 8 256 8zm-28.9 143.6l75.5 72.4H120c-13.3 0-24 10.7-24 24v16c0 13.3 10.7 24 24 24h182.6l-75.5 72.4c-9.7 9.3-9.9 24.8-.4 34.3l11 10.9c9.4 9.4 24.6 9.4 33.9 0L404.3 273c9.4-9.4 9.4-24.6 0-33.9L271.6 106.3c-9.4-9.4-24.6-9.4-33.9 0l-11 10.9c-9.5 9.6-9.3 25.1.4 34.4z"></path></svg>  Latest Tow <strong className="font-500">Trucks </strong></li>
+                <li className="relative"><svg className="absolute -left-8  top-1 fill-[#38A132] size-6" viewBox="0 0 512 512" data-id="icon-arrow-circle-right-solid" data-name=""><path d="M256 8c137 0 248 111 248 248S393 504 256 504 8 393 8 256 119 8 256 8zm-28.9 143.6l75.5 72.4H120c-13.3 0-24 10.7-24 24v16c0 13.3 10.7 24 24 24h182.6l-75.5 72.4c-9.7 9.3-9.9 24.8-.4 34.3l11 10.9c9.4 9.4 24.6 9.4 33.9 0L404.3 273c9.4-9.4 9.4-24.6 0-33.9L271.6 106.3c-9.4-9.4-24.6-9.4-33.9 0l-11 10.9c-9.5 9.6-9.3 25.1.4 34.4z"></path></svg> <strong className="font-500">Trusted & Reliable</strong> Service</li>
+                <li className="relative"><svg className="absolute -left-8  top-1 fill-[#38A132] size-6" viewBox="0 0 512 512" data-id="icon-arrow-circle-right-solid" data-name=""><path d="M256 8c137 0 248 111 248 248S393 504 256 504 8 393 8 256 119 8 256 8zm-28.9 143.6l75.5 72.4H120c-13.3 0-24 10.7-24 24v16c0 13.3 10.7 24 24 24h182.6l-75.5 72.4c-9.7 9.3-9.9 24.8-.4 34.3l11 10.9c9.4 9.4 24.6 9.4 33.9 0L404.3 273c9.4-9.4 9.4-24.6 0-33.9L271.6 106.3c-9.4-9.4-24.6-9.4-33.9 0l-11 10.9c-9.5 9.6-9.3 25.1.4 34.4z"></path></svg> <strong className="font-500">24/7</strong> {keyword}</li>
+                <li className="relative"><svg className="absolute -left-8  top-1 fill-[#38A132] size-6" viewBox="0 0 512 512" data-id="icon-arrow-circle-right-solid" data-name=""><path d="M256 8c137 0 248 111 248 248S393 504 256 504 8 393 8 256 119 8 256 8zm-28.9 143.6l75.5 72.4H120c-13.3 0-24 10.7-24 24v16c0 13.3 10.7 24 24 24h182.6l-75.5 72.4c-9.7 9.3-9.9 24.8-.4 34.3l11 10.9c9.4 9.4 24.6 9.4 33.9 0L404.3 273c9.4-9.4 9.4-24.6 0-33.9L271.6 106.3c-9.4-9.4-24.6-9.4-33.9 0l-11 10.9c-9.5 9.6-9.3 25.1.4 34.4z"></path></svg> <strong className="font-500">Damage-Free</strong> Car Recovery</li>
               </ul>
               <div className="max-w-82.5">
                 <Button href="tel:+447389099089" title="0738 909 9089" subTitle="24/7 Service - Call Now" text="Arrive in less than 15 mins" />
@@ -152,8 +152,8 @@ function HomeContent() {
       <section className="py-6 md:py-10 mt-6 md:mt-16">
         <div className="max-w-[1180px] mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <h2 className="text-[36px] md:text-[60px] text-orange leading-tight font-bold">Get Your Car Recovered</h2>
-            <p className="text-blue text-[24px] md:text-[36px] font-semibold">in 3 Easy Steps</p>
+            <h2 className="text-[36px] md:text-[60px] text-orange leading-tight font-[800]">Get Your Car Recovered</h2>
+            <p className="text-blue text-[24px] md:text-[36px] font-[600]">in 3 Easy Steps</p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-0 mt-10">
@@ -189,7 +189,7 @@ function HomeContent() {
         />
         <div className="max-w-[1180px] mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center">
-            <h2 className="text-[36px] capitalize md:text-[60px] text-orange leading-tight font-bold">{eKeyword}<br className="max-md:hidden" />
+            <h2 className="text-[36px] capitalize md:text-[60px] text-orange leading-tight font-[800]">{eKeyword}<br className="max-md:hidden" />
               <span className="md:hidden"> </span>in <span className="text-white">{locationName}</span> & <span className="text-white">Outskirts</span>
             </h2>
           </div>
@@ -212,21 +212,21 @@ function HomeContent() {
           <div className="mt-10 md:mt-20 grid grid-cols-1 md:grid-cols-2 gap-x-10 lg:gap-x-20 gap-y-8 text-[16px] md:text-[20px] font-light">
             <div className="flex items-start gap-4">
               <ArrowIcon className="shrink-0 mt-1 fill-[#38A132] size-6" />
-              <p><strong className="font-semibold capitalize">24 HOUR {kwd ? kwd : "EMERGENCY CAR RECOVERY"}:</strong><br /> Available 24/7, our {kwd ? kwd : "Emergency Car Recovery"} ensures swift assistance for breakdowns and mishaps, anytime, anywhere in {locationName} & Outskirts.</p>
+              <p className="font-[300]"><strong className="font-[500] capitalize">24 HOUR {kwd ? kwd : "EMERGENCY CAR RECOVERY"}:</strong><br /> Available 24/7, our {kwd ? kwd : "Emergency Car Recovery"} ensures swift assistance for breakdowns and mishaps, anytime, anywhere in {locationName} & Outskirts.</p>
             </div>
             <div className="flex items-start gap-4">
               <ArrowIcon className="shrink-0 mt-1 fill-[#38A132] size-6" />
-              <p><strong className="font-semibold capitalize">Roadside Assistance:</strong><br />
+              <p className="font-[300]"><strong className="font-[500] capitalize">Roadside Assistance:</strong><br />
                 Get back on the road swiftly with our reliable roadside assistance. Available around the clock for all your vehicle needs in {locationName} & Outskirts. Call Now!</p>
             </div>
             <div className="flex items-start gap-4">
               <ArrowIcon className="shrink-0 mt-1 fill-[#38A132] size-6" />
-              <p><strong className="font-semibold capitalize">Vehicle Transportation:</strong> Seamless vehicle transportation tailored to your needs. Trust us for safe and efficient transport services in {locationName} & Outskirts.
+              <p className="font-[300]"><strong className="font-[500] capitalize">Vehicle Transportation:</strong> Seamless vehicle transportation tailored to your needs. Trust us for safe and efficient transport services in {locationName} & Outskirts.
               </p>
             </div>
             <div className="flex items-start gap-4">
               <ArrowIcon className="shrink-0 mt-1 fill-[#38A132] size-6" />
-              <p><strong className="font-semibold capitalize">Jump Start:</strong> Quick and efficient jump-start services to revive your vehicle's battery, available whenever you need it.
+              <p className="font-[300]"><strong className="font-[500] capitalize">Jump Start:</strong> Quick and efficient jump-start services to revive your vehicle's battery, available whenever you need it.
               </p>
             </div>
           </div>
@@ -237,8 +237,8 @@ function HomeContent() {
       <section className="py-6 md:py-10 mt-6 md:mt-16">
         <div className="max-w-[1180px] mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <h4 className="text-blue text-[24px] md:text-[36px] font-bold">Trusted by <span className="text-orange">1000s</span> Across The {city}</h4>
-            <h2 className="text-[36px] md:text-[60px] text-orange leading-tight font-extrabold">OUR CUSTOMERS LOVE US</h2>
+            <h4 className="text-blue text-[24px] md:text-[36px] font-[800]">Trusted by <span className="text-orange">1000s</span> Across The {city}</h4>
+            <h2 className="text-[36px] md:text-[60px] text-orange leading-tight font-[800]">OUR CUSTOMERS LOVE US</h2>
             <div className="max-w-[150px] h-2.5 bg-[#FFD245] mx-auto"></div>
           </div>
 
@@ -270,7 +270,7 @@ function HomeContent() {
       <section className="py-8 md:py-20 mt-8 md:mt-16 bg-[#EAEAEA]">
         <div className="max-w-[1180px] mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <h2 className="text-[36px] md:text-[60px] text-orange leading-tight font-bold">WHY CHOOSE US</h2>
+            <h2 className="text-[36px] md:text-[60px] text-orange leading-tight font-[800]">WHY CHOOSE US</h2>
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-15 mt-10 md:mt-20">
@@ -291,24 +291,24 @@ function HomeContent() {
               <div className="flex items-start mb-6">
                 <svg className="size-[28px] text-[#38A132] mr-4 shrink-0 mt-0.5" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" /></svg>
                 <div className="text-[16px] md:text-[20px]">
-                  <h5 className="font-semibold">Swift Responce</h5>
-                  <p className="font-light">Immediate assistance when you need it most.</p>
+                  <h5 className="font-[500]">Swift Responce</h5>
+                  <p className="font-[300]">Immediate assistance when you need it most.</p>
                 </div>
               </div>
 
               <div className="flex items-start mb-6">
                 <svg className="size-[28px] text-[#38A132] mr-4 shrink-0 mt-0.5" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" /></svg>
                 <div className="text-[16px] md:text-[20px]">
-                  <h5 className="font-semibold">24/7 Availability</h5>
-                  <p className="font-light">We're here for you around the clock.</p>
+                  <h5 className="font-[500]">24/7 Availability</h5>
+                  <p className="font-[300]">We're here for you around the clock.</p>
                 </div>
               </div>
 
               <div className="flex items-start mb-6">
                 <svg className="size-[28px] text-[#38A132] mr-4 shrink-0 mt-0.5" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" /></svg>
                 <div className="text-[16px] md:text-[20px]">
-                  <h5 className="font-semibold">Expertise</h5>
-                  <p className="font-light">Skilled professionals ensuring reliable solutions.</p>
+                  <h5 className="font-[500]">Expertise</h5>
+                  <p className="font-[300]">Skilled professionals ensuring reliable solutions.</p>
                 </div>
               </div>
 
@@ -330,7 +330,7 @@ function HomeContent() {
       <footer className="py-8  bg-[#252727] text-white">
         <div className="max-w-[1180px] mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <h5 className="text-md text-white/80 font-light">Copyright © {new Date().getFullYear()} Group 961 Ltd. All rights reserved.</h5>
+            <h5 className="text-md text-white/80 font-[300]">Copyright © {new Date().getFullYear()} Group 961 Ltd. All rights reserved.</h5>
           </div>
         </div>
       </footer>
