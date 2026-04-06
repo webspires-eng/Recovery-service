@@ -86,12 +86,12 @@ export default function Home() {
               <h4 className="text-[20px] md:text-[26px] font-bold text-blue">Arrive in less than 15 mins</h4>
 
               <ul className="border-t border-cyan-900/20 mt-3 mb-6 pl-8 pt-3 opacity-90 space-y-2 md:space-y-1 text-[16px] md:text-[20px]" >
-                <li className="relative"><svg className="absolute -left-8 top-1 fill-[#38A132] size-6" viewBox="0 0 512 512" data-id="icon-arrow-circle-right-solid" data-name=""><path d="M256 8c137 0 248 111 248 248S393 504 256 504 8 393 8 256 119 8 256 8zm-28.9 143.6l75.5 72.4H120c-13.3 0-24 10.7-24 24v16c0 13.3 10.7 24 24 24h182.6l-75.5 72.4c-9.7 9.3-9.9 24.8-.4 34.3l11 10.9c9.4 9.4 24.6 9.4 33.9 0L404.3 273c9.4-9.4 9.4-24.6 0-33.9L271.6 106.3c-9.4-9.4-24.6-9.4-33.9 0l-11 10.9c-9.5 9.6-9.3 25.1.4 34.4z"></path></svg>  <strong>Rapid</strong> Response Time</li>
-                <li className="relative"><svg className="absolute -left-8 top-1 fill-[#38A132] size-6" viewBox="0 0 512 512" data-id="icon-arrow-circle-right-solid" data-name=""><path d="M256 8c137 0 248 111 248 248S393 504 256 504 8 393 8 256 119 8 256 8zm-28.9 143.6l75.5 72.4H120c-13.3 0-24 10.7-24 24v16c0 13.3 10.7 24 24 24h182.6l-75.5 72.4c-9.7 9.3-9.9 24.8-.4 34.3l11 10.9c9.4 9.4 24.6 9.4 33.9 0L404.3 273c9.4-9.4 9.4-24.6 0-33.9L271.6 106.3c-9.4-9.4-24.6-9.4-33.9 0l-11 10.9c-9.5 9.6-9.3 25.1.4 34.4z"></path></svg>  Transparent <strong>Pricing</strong></li>
-                <li className="relative"><svg className="absolute -left-8 top-1 fill-[#38A132] size-6" viewBox="0 0 512 512" data-id="icon-arrow-circle-right-solid" data-name=""><path d="M256 8c137 0 248 111 248 248S393 504 256 504 8 393 8 256 119 8 256 8zm-28.9 143.6l75.5 72.4H120c-13.3 0-24 10.7-24 24v16c0 13.3 10.7 24 24 24h182.6l-75.5 72.4c-9.7 9.3-9.9 24.8-.4 34.3l11 10.9c9.4 9.4 24.6 9.4 33.9 0L404.3 273c9.4-9.4 9.4-24.6 0-33.9L271.6 106.3c-9.4-9.4-24.6-9.4-33.9 0l-11 10.9c-9.5 9.6-9.3 25.1.4 34.4z"></path></svg>  Latest Tow <strong>Trucks </strong></li>
-                <li className="relative"><svg className="absolute -left-8 top-1 fill-[#38A132] size-6" viewBox="0 0 512 512" data-id="icon-arrow-circle-right-solid" data-name=""><path d="M256 8c137 0 248 111 248 248S393 504 256 504 8 393 8 256 119 8 256 8zm-28.9 143.6l75.5 72.4H120c-13.3 0-24 10.7-24 24v16c0 13.3 10.7 24 24 24h182.6l-75.5 72.4c-9.7 9.3-9.9 24.8-.4 34.3l11 10.9c9.4 9.4 24.6 9.4 33.9 0L404.3 273c9.4-9.4 9.4-24.6 0-33.9L271.6 106.3c-9.4-9.4-24.6-9.4-33.9 0l-11 10.9c-9.5 9.6-9.3 25.1.4 34.4z"></path></svg> <strong>Trusted & Reliable</strong> Service</li>
-                <li className="relative"><svg className="absolute -left-8 top-1 fill-[#38A132] size-6" viewBox="0 0 512 512" data-id="icon-arrow-circle-right-solid" data-name=""><path d="M256 8c137 0 248 111 248 248S393 504 256 504 8 393 8 256 119 8 256 8zm-28.9 143.6l75.5 72.4H120c-13.3 0-24 10.7-24 24v16c0 13.3 10.7 24 24 24h182.6l-75.5 72.4c-9.7 9.3-9.9 24.8-.4 34.3l11 10.9c9.4 9.4 24.6 9.4 33.9 0L404.3 273c9.4-9.4 9.4-24.6 0-33.9L271.6 106.3c-9.4-9.4-24.6-9.4-33.9 0l-11 10.9c-9.5 9.6-9.3 25.1.4 34.4z"></path></svg> <strong>24/7</strong> Car Recovery Service</li>
-                <li className="relative"><svg className="absolute -left-8 top-1 fill-[#38A132] size-6" viewBox="0 0 512 512" data-id="icon-arrow-circle-right-solid" data-name=""><path d="M256 8c137 0 248 111 248 248S393 504 256 504 8 393 8 256 119 8 256 8zm-28.9 143.6l75.5 72.4H120c-13.3 0-24 10.7-24 24v16c0 13.3 10.7 24 24 24h182.6l-75.5 72.4c-9.7 9.3-9.9 24.8-.4 34.3l11 10.9c9.4 9.4 24.6 9.4 33.9 0L404.3 273c9.4-9.4 9.4-24.6 0-33.9L271.6 106.3c-9.4-9.4-24.6-9.4-33.9 0l-11 10.9c-9.5 9.6-9.3 25.1.4 34.4z"></path></svg> <strong>Damage-Free</strong> Car Recovery</li>
+                <li className="relative"><svg className="absolute -left-8  top-1 fill-[#38A132] size-6" viewBox="0 0 512 512" data-id="icon-arrow-circle-right-solid" data-name=""><path d="M256 8c137 0 248 111 248 248S393 504 256 504 8 393 8 256 119 8 256 8zm-28.9 143.6l75.5 72.4H120c-13.3 0-24 10.7-24 24v16c0 13.3 10.7 24 24 24h182.6l-75.5 72.4c-9.7 9.3-9.9 24.8-.4 34.3l11 10.9c9.4 9.4 24.6 9.4 33.9 0L404.3 273c9.4-9.4 9.4-24.6 0-33.9L271.6 106.3c-9.4-9.4-24.6-9.4-33.9 0l-11 10.9c-9.5 9.6-9.3 25.1.4 34.4z"></path></svg>  <strong>Rapid</strong> Response Time</li>
+                <li className="relative"><svg className="absolute -left-8  top-1 fill-[#38A132] size-6" viewBox="0 0 512 512" data-id="icon-arrow-circle-right-solid" data-name=""><path d="M256 8c137 0 248 111 248 248S393 504 256 504 8 393 8 256 119 8 256 8zm-28.9 143.6l75.5 72.4H120c-13.3 0-24 10.7-24 24v16c0 13.3 10.7 24 24 24h182.6l-75.5 72.4c-9.7 9.3-9.9 24.8-.4 34.3l11 10.9c9.4 9.4 24.6 9.4 33.9 0L404.3 273c9.4-9.4 9.4-24.6 0-33.9L271.6 106.3c-9.4-9.4-24.6-9.4-33.9 0l-11 10.9c-9.5 9.6-9.3 25.1.4 34.4z"></path></svg>  Transparent <strong>Pricing</strong></li>
+                <li className="relative"><svg className="absolute -left-8  top-1 fill-[#38A132] size-6" viewBox="0 0 512 512" data-id="icon-arrow-circle-right-solid" data-name=""><path d="M256 8c137 0 248 111 248 248S393 504 256 504 8 393 8 256 119 8 256 8zm-28.9 143.6l75.5 72.4H120c-13.3 0-24 10.7-24 24v16c0 13.3 10.7 24 24 24h182.6l-75.5 72.4c-9.7 9.3-9.9 24.8-.4 34.3l11 10.9c9.4 9.4 24.6 9.4 33.9 0L404.3 273c9.4-9.4 9.4-24.6 0-33.9L271.6 106.3c-9.4-9.4-24.6-9.4-33.9 0l-11 10.9c-9.5 9.6-9.3 25.1.4 34.4z"></path></svg>  Latest Tow <strong>Trucks </strong></li>
+                <li className="relative"><svg className="absolute -left-8  top-1 fill-[#38A132] size-6" viewBox="0 0 512 512" data-id="icon-arrow-circle-right-solid" data-name=""><path d="M256 8c137 0 248 111 248 248S393 504 256 504 8 393 8 256 119 8 256 8zm-28.9 143.6l75.5 72.4H120c-13.3 0-24 10.7-24 24v16c0 13.3 10.7 24 24 24h182.6l-75.5 72.4c-9.7 9.3-9.9 24.8-.4 34.3l11 10.9c9.4 9.4 24.6 9.4 33.9 0L404.3 273c9.4-9.4 9.4-24.6 0-33.9L271.6 106.3c-9.4-9.4-24.6-9.4-33.9 0l-11 10.9c-9.5 9.6-9.3 25.1.4 34.4z"></path></svg> <strong>Trusted & Reliable</strong> Service</li>
+                <li className="relative"><svg className="absolute -left-8  top-1 fill-[#38A132] size-6" viewBox="0 0 512 512" data-id="icon-arrow-circle-right-solid" data-name=""><path d="M256 8c137 0 248 111 248 248S393 504 256 504 8 393 8 256 119 8 256 8zm-28.9 143.6l75.5 72.4H120c-13.3 0-24 10.7-24 24v16c0 13.3 10.7 24 24 24h182.6l-75.5 72.4c-9.7 9.3-9.9 24.8-.4 34.3l11 10.9c9.4 9.4 24.6 9.4 33.9 0L404.3 273c9.4-9.4 9.4-24.6 0-33.9L271.6 106.3c-9.4-9.4-24.6-9.4-33.9 0l-11 10.9c-9.5 9.6-9.3 25.1.4 34.4z"></path></svg> <strong>24/7</strong> Car Recovery Service</li>
+                <li className="relative"><svg className="absolute -left-8  top-1 fill-[#38A132] size-6" viewBox="0 0 512 512" data-id="icon-arrow-circle-right-solid" data-name=""><path d="M256 8c137 0 248 111 248 248S393 504 256 504 8 393 8 256 119 8 256 8zm-28.9 143.6l75.5 72.4H120c-13.3 0-24 10.7-24 24v16c0 13.3 10.7 24 24 24h182.6l-75.5 72.4c-9.7 9.3-9.9 24.8-.4 34.3l11 10.9c9.4 9.4 24.6 9.4 33.9 0L404.3 273c9.4-9.4 9.4-24.6 0-33.9L271.6 106.3c-9.4-9.4-24.6-9.4-33.9 0l-11 10.9c-9.5 9.6-9.3 25.1.4 34.4z"></path></svg> <strong>Damage-Free</strong> Car Recovery</li>
               </ul>
               <div className="max-w-82.5">
                 <Button href="tel:+4407360544819" title="0736 054 4819" subTitle="24/7 Service - Call Now" text="Arrive in less than 15 mins" />
@@ -161,22 +161,22 @@ export default function Home() {
           </div>
 
           <div className="mt-10 md:mt-20 grid grid-cols-1 md:grid-cols-2 gap-x-10 lg:gap-x-20 gap-y-8 text-[16px] md:text-[20px] font-light">
-            <div className="relative pl-8">
-              <ArrowIcon />
+            <div className="flex items-start gap-4">
+              <ArrowIcon className="shrink-0 mt-1 fill-[#38A132] size-6" />
               <p><strong className="font-semibold">24 HOUR EMERGENCY CAR RECOVERY:</strong><br /> Available 24/7, our Emergency Car Recovery service ensures swift assistance for breakdowns and mishaps, anytime, anywhere in West Midlands & Outskirts.</p>
             </div>
-            <div className="relative pl-8">
-              <ArrowIcon />
+            <div className="flex items-start gap-4">
+              <ArrowIcon className="shrink-0 mt-1 fill-[#38A132] size-6" />
               <p><strong className="font-semibold">Roadside Assistance:</strong><br />
                 Get back on the road swiftly with our reliable roadside assistance. Available around the clock for all your vehicle needs in West Midlands & Outskirts. Call Now!</p>
             </div>
-            <div className="relative pl-8">
-              <ArrowIcon />
+            <div className="flex items-start gap-4">
+              <ArrowIcon className="shrink-0 mt-1 fill-[#38A132] size-6" />
               <p><strong className="font-semibold">Vehicle Transportation:</strong> Seamless vehicle transportation tailored to your needs. Trust us for safe and efficient transport services in West Midlands & Outskirts.
               </p>
             </div>
-            <div className="relative pl-8">
-              <ArrowIcon />
+            <div className="flex items-start gap-4">
+              <ArrowIcon className="shrink-0 mt-1 fill-[#38A132] size-6" />
               <p><strong className="font-semibold">Jump Start:</strong> Quick and efficient jump-start services to revive your vehicle's battery, available whenever you need it.
               </p>
             </div>
