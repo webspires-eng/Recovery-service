@@ -1,5 +1,5 @@
 "use client";
-import React, { useRef } from 'react';
+import React, { useRef, useEffect } from 'react';
 import TestimonialCard from './TestimonialCard';
 
 const TestimonialCarousel = ({ data }) => {
@@ -7,15 +7,32 @@ const TestimonialCarousel = ({ data }) => {
 
   const scrollLeft = () => {
     if (containerRef.current) {
-      containerRef.current.scrollBy({ left: -360, behavior: 'smooth' });
+      if (containerRef.current.scrollLeft <= 0) {
+        containerRef.current.scrollTo({ left: containerRef.current.scrollWidth, behavior: 'smooth' });
+      } else {
+        containerRef.current.scrollBy({ left: -360, behavior: 'smooth' });
+      }
     }
   };
 
   const scrollRight = () => {
     if (containerRef.current) {
-      containerRef.current.scrollBy({ left: 360, behavior: 'smooth' });
+      // If we reach the end, cycle back to the start smoothly
+      if (containerRef.current.scrollLeft + containerRef.current.clientWidth >= containerRef.current.scrollWidth - 20) {
+        containerRef.current.scrollTo({ left: 0, behavior: 'smooth' });
+      } else {
+        containerRef.current.scrollBy({ left: 360, behavior: 'smooth' });
+      }
     }
   };
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      scrollRight();
+    }, 3500); // Auto-scroll every 3.5 seconds
+    
+    return () => clearInterval(interval);
+  }, []);
 
   return (
     <div className="relative mt-10 max-w-full group">

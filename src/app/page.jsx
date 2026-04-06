@@ -90,7 +90,25 @@ function HomeContent() {
   return (
     <>
 
-      <section className="py-16">
+      {/* Mobile-Only Sticky Header */}
+      <div className="sticky top-0 z-[100] bg-[#FFE803] py-3 px-4 shadow-xs w-full  md:hidden">
+        <div className="max-w-[400px] w-full mx-auto">
+          <a href="tel:+4407360544819" className="bg-orange mb-1 shadow-md outline-none text-white rounded-full flex items-center justify-center relative w-full h-[56px] overflow-hidden">
+            <div className="bg-[#51A051] rounded-full size-12 flex items-center justify-center shadow-sm absolute left-1 top-1">
+              <svg className="size-6 text-white" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56-.35-.12-.74-.03-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.9-6.89-6.83l1.95-1.66c.27-.28.35-.67.24-1.02-.37-1.11-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.28 10.73 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z" />
+              </svg>
+            </div>
+            <div className="flex flex-col justify-center items-center pl-8">
+              <span className='text-[22px] font-bold leading-tight'>0736 054 4819</span>
+              <span className='text-[13px] font-semibold leading-tight'>24/7 Service - Call Now</span>
+            </div>
+          </a>
+          <div className="text-[16px] text-gray-800 text-center font-normal mt-1">Arrive in less than 15 mins</div>
+        </div>
+      </div>
+
+      <section className="py-8 md:py-16">
         <div className="max-w-[1180px] mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
             <div className="pr-5 mx-w-[600px]">
@@ -131,7 +149,7 @@ function HomeContent() {
 
 
       {/*  RECOVERD SECTION */}
-      <section className="py-10 mt-20">
+      <section className="py-6 md:py-10 mt-6 md:mt-16">
         <div className="max-w-[1180px] mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h2 className="text-[36px] md:text-[60px] text-orange leading-tight font-bold">Get Your Car Recovered</h2>
@@ -160,7 +178,7 @@ function HomeContent() {
       </section>
 
       {/*  RECOVERD SECTION */}
-      <section className="py-20 mt-20 bg-[#333333] relative overflow-hidden">
+      <section className="py-10 md:py-20 mt-8 md:mt-16 bg-[#333333] relative overflow-hidden">
         <Image
           src="https://uploads.webspires.co.uk/recovery961lp/images.jpeg"
           alt="Background"
@@ -186,7 +204,7 @@ function HomeContent() {
       </section>
 
       <section>
-        <div className="max-w-[1180px] py-16 mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-[1180px] py-6 md:py-16 mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h5 className="text-[18px] md:text-[24px] text-black/70 font-medium">Your Rapid Response Partner for Stress-Free Vehicle Assistance.</h5>
           </div>
@@ -216,7 +234,7 @@ function HomeContent() {
         </div>
       </section>
 
-      <section className="py-10 mt-20">
+      <section className="py-6 md:py-10 mt-6 md:mt-16">
         <div className="max-w-[1180px] mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h4 className="text-blue text-[24px] md:text-[36px] font-bold">Trusted by <span className="text-orange">1000s</span> Across The {city}</h4>
@@ -249,7 +267,7 @@ function HomeContent() {
 
 
       {/* Why Choose us*/}
-      <section className="py-20 mt-20 bg-[#EAEAEA]">
+      <section className="py-8 md:py-20 mt-8 md:mt-16 bg-[#EAEAEA]">
         <div className="max-w-[1180px] mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h2 className="text-[36px] md:text-[60px] text-orange leading-tight font-bold">WHY CHOOSE US</h2>
@@ -309,7 +327,7 @@ function HomeContent() {
       </section>
 
 
-      <footer className="py-8 mt-20 bg-[#252727] text-white">
+      <footer className="py-8  bg-[#252727] text-white">
         <div className="max-w-[1180px] mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h5 className="text-md text-white/80 font-light">Copyright © {new Date().getFullYear()} Group 961 Ltd. All rights reserved.</h5>
@@ -317,6 +335,19 @@ function HomeContent() {
         </div>
       </footer>
 
+
+      {/* WhatsApp Floating Button */}
+      <a href="https://wa.me/4407360544819" target="_blank" rel="noopener noreferrer" className="fixed bottom-6 right-6 z-50 flex items-center gap-3 group">
+        <div className="bg-white rounded-md px-3 py-1.5 shadow-xl text-sm font-bold text-black border border-gray-100 relative drop-shadow-md hidden sm:block">
+          Need Help?
+          <div className="absolute top-1/2 -translate-y-1/2 -right-[5px] w-0 h-0 border-t-[5px] border-t-transparent border-b-[5px] border-b-transparent border-l-[6px] border-l-white drop-shadow-sm"></div>
+        </div>
+        <div className="bg-[#25D366] hover:bg-[#128C7E] transition-colors rounded-full size-14 md:size-16 flex items-center justify-center shadow-lg border-2 border-white drop-shadow-lg group-hover:scale-110 duration-300">
+          <svg className="size-8 md:size-9 text-white fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.015c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z" />
+          </svg>
+        </div>
+      </a>
 
     </>
   );
