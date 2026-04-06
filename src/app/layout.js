@@ -18,6 +18,33 @@ export default function RootLayout({ children }) {
       className={`${rubik.className} h-full antialiased`}
     >
       <head>
+        {/* Google Analytics & Ads Global Tag */}
+        <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16752004182"></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'AW-16752004182');
+
+              window.gtag_report_conversion = function(url) {
+                var callback = function () {
+                  if (typeof(url) != 'undefined') {
+                    window.location = url;
+                  }
+                };
+                gtag('event', 'conversion', {
+                    'send_to': 'AW-16752004182/pDAvCPKt-ZYcENaY_bM-',
+                    'value': 1.0,
+                    'currency': 'GBP',
+                    'event_callback': callback
+                });
+                return false;
+              };
+            `
+          }}
+        />
         <script
           dangerouslySetInnerHTML={{
             __html: `

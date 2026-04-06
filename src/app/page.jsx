@@ -93,7 +93,7 @@ function HomeContent() {
       {/* Mobile-Only Sticky Header */}
       <div className="sticky top-0 z-[100] bg-[#FFE803] py-3 px-4 shadow-xs w-full  md:hidden">
         <div className="max-w-[400px] w-full mx-auto">
-          <a href="tel:+447389099089" className="bg-orange mb-1 shadow-md outline-none text-white rounded-full flex items-center justify-center relative w-full h-[56px] overflow-hidden">
+          <a href="tel:+447389099089" onClick={() => { if (typeof window !== 'undefined' && window.gtag_report_conversion) window.gtag_report_conversion('tel:+447389099089'); }} className="bg-orange mb-1 shadow-md outline-none text-white rounded-full flex items-center justify-center relative w-full h-[56px] overflow-hidden">
             <div className="bg-[#51A051] rounded-full size-12 flex items-center justify-center shadow-sm absolute left-1 top-1">
               <svg className="size-6 text-white" viewBox="0 0 24 24" fill="currentColor">
                 <path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56-.35-.12-.74-.03-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.9-6.89-6.83l1.95-1.66c.27-.28.35-.67.24-1.02-.37-1.11-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.28 10.73 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z" />

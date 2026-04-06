@@ -1,9 +1,14 @@
 import React from 'react'
 
 const Button = ({ href, title, subTitle, text, theme = 'light' }) => {
+    const handleClick = () => {
+        if (typeof window !== 'undefined' && window.gtag_report_conversion) {
+            window.gtag_report_conversion(href);
+        }
+    };
     return (
         <>
-            <a href={href} className="bg-orange mb-1 outline-none text-sm text-white hover:bg-blue px-6 py-3 rounded-full transition-colors duration-300 block">
+            <a href={href} onClick={handleClick} className="bg-orange mb-1 outline-none text-sm text-white hover:bg-blue px-6 py-3 rounded-full transition-colors duration-300 block">
                 <div className="flex flex-col justify-center items-center">
                     <span className='text-[22px] font-[700]'>{title}</span>
                     {subTitle}
