@@ -93,14 +93,14 @@ function HomeContent() {
       {/* Mobile-Only Sticky Header */}
       <div className="sticky top-0 z-[100] bg-[#FFE803] py-3 px-4 shadow-xs w-full  md:hidden">
         <div className="max-w-[400px] w-full mx-auto">
-          <a href="tel:+4407360544819" className="bg-orange mb-1 shadow-md outline-none text-white rounded-full flex items-center justify-center relative w-full h-[56px] overflow-hidden">
+          <a href="tel:+447389099089" className="bg-orange mb-1 shadow-md outline-none text-white rounded-full flex items-center justify-center relative w-full h-[56px] overflow-hidden">
             <div className="bg-[#51A051] rounded-full size-12 flex items-center justify-center shadow-sm absolute left-1 top-1">
               <svg className="size-6 text-white" viewBox="0 0 24 24" fill="currentColor">
                 <path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56-.35-.12-.74-.03-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.9-6.89-6.83l1.95-1.66c.27-.28.35-.67.24-1.02-.37-1.11-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.28 10.73 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z" />
               </svg>
             </div>
             <div className="flex flex-col justify-center items-center pl-8">
-              <span className='text-[22px] font-bold leading-tight'>0736 054 4819</span>
+              <span className='text-[22px] font-bold leading-tight'>0738 909 9089</span>
               <span className='text-[13px] font-semibold leading-tight'>24/7 Service - Call Now</span>
             </div>
           </a>
@@ -128,7 +128,7 @@ function HomeContent() {
                 <li className="relative"><svg className="absolute -left-8  top-1 fill-[#38A132] size-6" viewBox="0 0 512 512" data-id="icon-arrow-circle-right-solid" data-name=""><path d="M256 8c137 0 248 111 248 248S393 504 256 504 8 393 8 256 119 8 256 8zm-28.9 143.6l75.5 72.4H120c-13.3 0-24 10.7-24 24v16c0 13.3 10.7 24 24 24h182.6l-75.5 72.4c-9.7 9.3-9.9 24.8-.4 34.3l11 10.9c9.4 9.4 24.6 9.4 33.9 0L404.3 273c9.4-9.4 9.4-24.6 0-33.9L271.6 106.3c-9.4-9.4-24.6-9.4-33.9 0l-11 10.9c-9.5 9.6-9.3 25.1.4 34.4z"></path></svg> <strong>Damage-Free</strong> Car Recovery</li>
               </ul>
               <div className="max-w-82.5">
-                <Button href="tel:+4407360544819" title="0736 054 4819" subTitle="24/7 Service - Call Now" text="Arrive in less than 15 mins" />
+                <Button href="tel:+447389099089" title="0738 909 9089" subTitle="24/7 Service - Call Now" text="Arrive in less than 15 mins" />
               </div>
             </div>
 
@@ -170,7 +170,7 @@ function HomeContent() {
           </div>
 
           <div className="max-w-[350px] mx-auto mt-10">
-            <Button href="tel:+4407360544819" title="0736 054 4819" subTitle="24/7 Service - Call Now" text="Arrive in less than 15 mins" />
+            <Button href="tel:+447389099089" title="0738 909 9089" subTitle="24/7 Service - Call Now" text="Arrive in less than 15 mins" />
           </div>
 
 
@@ -196,7 +196,7 @@ function HomeContent() {
 
 
           <div className="max-w-[350px] mx-auto mt-10">
-            <Button href="tel:+4407360544819" title="0736 054 4819" subTitle="24/7 Service - Call Now" text="Arrive in less than 15 mins" theme="dark" />
+            <Button href="tel:+447389099089" title="0738 909 9089" subTitle="24/7 Service - Call Now" text="Arrive in less than 15 mins" theme="dark" />
           </div>
 
 
@@ -313,7 +313,7 @@ function HomeContent() {
               </div>
 
               <div className="max-w-[300px] mx-auto mt-10">
-                <Button href="tel:+4407360544819" title="0736 054 4819" subTitle="24/7 Service - Call Now" text="Arrive in less than 15 mins" />
+                <Button href="tel:+447389099089" title="0738 909 9089" subTitle="24/7 Service - Call Now" text="Arrive in less than 15 mins" />
               </div>
 
             </div>
@@ -337,7 +337,7 @@ function HomeContent() {
 
 
       {/* WhatsApp Floating Button */}
-      <a href="https://wa.me/4407360544819" target="_blank" rel="noopener noreferrer" className="fixed bottom-6 right-6 z-50 flex items-center gap-3 group">
+      <a href="https://api.whatsapp.com/send?phone=+447432867121&text=Hey+i+need+help%21" target="_blank" rel="noopener noreferrer" className="fixed bottom-6 right-6 z-50 flex items-center gap-3 group">
         <div className="bg-white rounded-md px-3 py-1.5 shadow-xl text-sm font-bold text-black border border-gray-100 relative drop-shadow-md hidden sm:block">
           Need Help?
           <div className="absolute top-1/2 -translate-y-1/2 -right-[5px] w-0 h-0 border-t-[5px] border-t-transparent border-b-[5px] border-b-transparent border-l-[6px] border-l-white drop-shadow-sm"></div>
